@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Product | Nutrelins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="buc-logo.png" alt="BUC Logo">
+</header>
+
+<main>
+
+    <section class="welcome-section">
+        <h1>Scan Your Product</h1>
+        <p class="subtitle">Check before you eat!</p>
+        <p class="description">
+            Discover if your food products are safe for your allergies.
+        </p>
+    </section>
+
+    <section class="card scan-section">
+
+        <h2>Product Scanner</h2>
+
+        <p>Enter the product barcode below.</p>
+
+        <div class="barcode-input">
+            <input
+                type="text"
+                id="barcode"
+                placeholder="Enter barcode number..."
+                inputmode="numeric"
+            >
+
+            <button class="btn-primary" id="scan-button">
+                Scan Product
+            </button>
+        </div>
+
+        <div class="upload-section">
+            <h3>Product Not Found?</h3>
+
+            <p>Upload a photo of the ingredients list.</p>
+
+            <label for="ingredients-photo" class="upload-label">
+                📷 Upload Ingredients Photo
+            </label>
+
+            <input
+                type="file"
+                id="ingredients-photo"
+                accept="image/*"
+                hidden
+            >
+        </div>
+
+        <div id="scan-result" class="scan-result" hidden>
+        </div>
+
+    </section>
+
+    <div class="back-link">
+        <a href="index.html">← Back to My Profile</a>
+    </div>
+
+</main>
+
+<script src="scan.js"></script>
+
+</body>
+</html>

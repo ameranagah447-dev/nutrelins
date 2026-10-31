@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrelins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="buc-logo.png" alt="BUC Logo">
+</header>
+
+<main>
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome-section">
+        <h1>Welcome to Nutrelins</h1>
+        <p class="subtitle">Your Food Allergy Assistant</p>
+        <p class="description">
+            Discover safer food choices and protect yourself
+            from hidden food allergens.
+        </p>
+    </section>
+
+    <!-- ALLERGY PROFILE -->
+    <section class="card allergy-section">
+
+        <h2>Create Your Profile</h2>
+        <p>Select the food allergens you need to avoid.</p>
+
+        <h3>Select Your Allergies</h3>
+
+        <div class="allergy-options">
+
+            <label class="allergy-option">
+                <input type="checkbox" value="Milk"> Milk
+            </label>
+
+            <label class="allergy-option">
+                <input type="checkbox" value="Eggs"> Eggs
+            </label>
+
+            <label class="allergy-option">
+                <input type="checkbox" value="Peanuts"> Peanuts
+            </label>
+
+            <label class="allergy-option">
+                <input type="checkbox" value="Tree Nuts"> Tree Nuts
+            </label>
+
+            <label class="allergy-option">
+                <input type="checkbox" value="Wheat"> Wheat
+            </label>
+
+            <label class="allergy-option">
+                <input type="checkbox" value="Soy"> Soy
+            </label>
+
+            <label class="allergy-option">
+                <input type="checkbox" value="Fish"> Fish
+            </label>
+
+            <label class="allergy-option">
+                <input type="checkbox" value="Shellfish"> Shellfish
+            </label>
+
+        </div>
+
+        <!-- OTHER ALLERGIES -->
+        <div class="other-section">
+            <h3>Other Allergies</h3>
+            <input
+                type="text"
+                id="other-allergy"
+                placeholder="Enter another allergen..."
+            >
+        </div>
+
+        <!-- PROFILE TYPE -->
+        <div class="profile-type">
+
+            <h3>Profile Type</h3>
+            <p>Who is this profile for?</p>
+
+            <label>
+                <input type="radio" name="profile-type"
+                value="My Profile" checked>
+                My Profile
+            </label>
+
+            <label>
+                <input type="radio" name="profile-type"
+                value="My Child's Profile">
+                My Child's Profile
+            </label>
+
+        </div>
+
+        <!-- PRIVACY NOTE -->
+        <div class="privacy-note">
+            <h3>🔒 Your Privacy Matters</h3>
+            <p>
+                Your allergy information is personal.
+                We care about keeping your information private.
+            </p>
+        </div>
+
+    <div class="profile-buttons">
+
+    <button class="btn-primary" id="save-allergies">
+        Save My Profile
+    </button>
+
+    <button class="btn-secondary" id="edit-profile" type="button" hidden>
+        Edit My Profile
+    </button>
+
+</div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
